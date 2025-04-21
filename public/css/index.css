@@ -19,7 +19,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('img/bg.jpg'); 
+    background-image: url('../public/img/bg.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -256,7 +256,7 @@ input[type="text"] {
 
 
 button {
-    background-color: #01306e;
+    background-color: #111528;
     color: white;
     padding: 10px;
     border: none;
@@ -267,10 +267,54 @@ button {
 }   
  
 button:hover {
-    background-color: #05206b;
+    background-color: #1e2546;
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        height: auto;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 90%;
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    .otp-input {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .otp-input input[type="text"] {
+        width: 20%;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .forgot-password {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 70%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
